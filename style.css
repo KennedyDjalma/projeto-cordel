@@ -10,31 +10,6 @@
     --fonte3: "Sriracha", cursive;
 }
 
-/* .sriracha-regular {
-    font-family: "Sriracha", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .passion-one-regular {
-    font-family: "Passion One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .passion-one-bold {
-    font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .passion-one-black {
-    font-family: "Passion One", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-   */
-
 * {
     margin: 0px;
     padding: 0px;
@@ -55,12 +30,10 @@ header {
 
 header > h1 {
     padding: 50px;
-    /* text-transform: uppercase;  usar letras maiusculas */
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 10vw; /* 10% da tela */
+    font-size: 10vw;
 }
-/*  */
 
 header > p {
     padding-bottom: 50px;
@@ -82,7 +55,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5em; /* 4.5% da tela */
+    font-size: 3.5em;
 }
 section > p {
     padding-top: 1em;
@@ -98,13 +71,11 @@ section.imagem {
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.333);
     background-attachment: fixed;
-
-    /*como vai ser usada na section 1 e 2, podemos usar o background sixe aqui e vai ser aplicada para os dois*/
     background-size: cover;
 }
 
 section.imagem > p {
-    display: inline-block; /* caixa adapta ao conteudo */
+    display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 1, 0.514);
     text-shadow: 1px 1px 0px black;
@@ -113,16 +84,10 @@ section.imagem > p {
 section#img01 {
     background-image: url(imagens/background001.jpg);
     background-position: right center;
-
-     /*A propriedade CSS é usada para dimensionar a imagem de fundo para ser o maior possível, de modo que a área de fundo seja completamente coberta pela imagem de fundo.*/
-    /* background-size: cover; */
 }
 
 section#img02 {
     background-image: url(imagens/background002.jpg);
-
-     /*A propriedade CSS é usada para dimensionar a imagem de fundo para ser o maior possível, de modo que a área de fundo seja completamente coberta pela imagem de fundo.*/
-    /* background-size: cover; */
 }
 
 footer {
