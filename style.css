@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
+}
+
+/* .sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .passion-one-regular {
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .passion-one-bold {
+    font-family: "Passion One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .passion-one-black {
+    font-family: "Passion One", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+   */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color:  white;
+    text-align: center;
+}
+
+header > h1 {
+    padding: 50px;
+    /* text-transform: uppercase;  usar letras maiusculas */
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw; /* 10% da tela */
+}
+/*  */
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5em; /* 4.5% da tela */
+}
+section > p {
+    padding-top: 1em;
+}
+
+section.normal {
+    background-color: white;
+    color: black; 
+}
+
+section.imagem {
+    background-color: rgb(51, 48, 48);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.333);
+    background-attachment: fixed;
+
+    /*como vai ser usada na section 1 e 2, podemos usar o background sixe aqui e vai ser aplicada para os dois*/
+    background-size: cover;
+}
+
+section.imagem > p {
+    display: inline-block; /* caixa adapta ao conteudo */
+    padding: 5px;
+    background-color: rgba(0, 0, 1, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+
+     /*A propriedade CSS é usada para dimensionar a imagem de fundo para ser o maior possível, de modo que a área de fundo seja completamente coberta pela imagem de fundo.*/
+    /* background-size: cover; */
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+
+     /*A propriedade CSS é usada para dimensionar a imagem de fundo para ser o maior possível, de modo que a área de fundo seja completamente coberta pela imagem de fundo.*/
+    /* background-size: cover; */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:  10px;
+}
